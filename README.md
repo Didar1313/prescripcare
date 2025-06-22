@@ -53,7 +53,7 @@ Managing health can be complex. PrescripCare helps by offering a single app wher
 
 | <img width="200" src="https://github.com/user-attachments/assets/d31fa03a-7ea7-42ae-aa98-de374248ea9e" /> | <img width="200" src="https://github.com/user-attachments/assets/1e903c41-fba9-4b53-be4f-a4088f072316" /> | <img width="200" src="https://github.com/user-attachments/assets/e37134ca-167e-4f3f-920e-9f1b107e30eb" /> |
 | :-------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------: |
-|                                                   Login                                                   |                                                  Sign Up                                                  |                                             Email Verification                                            |
+|                                                  Login $ Register                                                   |                                                Login                                                  |                                           Registration                                           |
 
 ---
 
