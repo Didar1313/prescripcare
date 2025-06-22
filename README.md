@@ -225,7 +225,6 @@ Managing health can be complex. PrescripCare helps by offering a single app wher
 
 **Didar Bhuiyan**
 Email: [didarbhuiyan1313@gmail.com](mailto:didarbhuiyan1313@gmail.com)
-
 GitHub: [github.com/Didar1313](https://github.com/Didar1313)
 
 ---
