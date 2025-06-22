@@ -1,71 +1,175 @@
-# Flutter eCommerce App
+# PrescripCare
 
-A complete Flutter-based eCommerce mobile application with Firebase for user authentication, shopping cart management, and product favorites. This app demonstrates modern UI design using Flutter and real-time data handling through Firebase.
+PrescripCare is a comprehensive Flutter mobile app designed to help users manage medical prescriptions, reports, medicine reminders, appointments, and medical history—all in one place. Additionally, users can search for doctors, hospitals, and nearby essential services like restaurants and pharmacies, with detailed info and locations, making health management easier and more connected.
+
+---
+
+## Table of Contents
+
+* [About](#about)
+* [Features](#features)
+* [Screenshots](#screenshots)
+* [Technologies Used](#technologies-used)
+* [Installation](#installation)
+* [Firebase Setup](#firebase-setup)
+* [Usage](#usage)
+* [Project Structure](#project-structure)
+* [Contact](#contact)
+
+---
+
+## About
+
+Managing health can be complex. PrescripCare helps by offering a single app where users can:
+
+* Upload and organize prescriptions and medical reports
+* Set medicine and appointment reminders
+* Track medical history
+* Search for doctors and hospitals with detailed information and location
+* Find nearby essential services like restaurants, pharmacies, and emergency services
+* Manage profiles and emergency contacts
+* Upload documents and PDFs for easy access
+
+---
 
 ## Features
 
-- **User Authentication:**
-  - Register and log in using Firebase Authentication.
-  - Secure password management.
+* **User Registration & Login:** Secure authentication with Firebase.
+* **Medicine & Appointment Reminders:** Add and get notifications for medicines and appointments.
+* **Prescription & Report Upload:** Upload images and PDFs of prescriptions and reports.
+* **Medical History:** Maintain a detailed log of your medical records.
+* **Doctor & Hospital Search:** Search doctors and hospitals with their details, locations, and contact info.
+* **Nearby Services:** Find nearby restaurants, pharmacies, and emergency ambulance services.
+* **Emergency Services:** Quick access to ambulance details and emergency contacts.
+* **User Profile:** Manage your personal and medical information.
+* **Offline Access:** Access saved info without internet connectivity.
 
-- **Product Management:**
-  - Browse and search products from the Firebase Firestore database.
-  - View detailed product information, including images, price, and description.
-
-- **Favorites Management:**
-  - Add products to a favorites list.
-  - Easily view, manage, and remove favorite items.
-
-- **Shopping Cart:**
-  - Add products to the shopping cart.
-  - Update and remove products from the cart in real time.
-  - Checkout process simulation.
-
-- **User Profile:**
-  - Manage user profile with Firebase, including personal information like name, email, and age.
-
-- **Responsive Design:**
-  - Adaptive UI using the Flutter `ScreenUtil` package to ensure compatibility across various screen sizes.
-
-- **Firebase Firestore Integration:**
-  - Securely store and retrieve user data, cart items, and favorite products.
-  - Real-time updates and syncing with Firebase Firestore.
-
-## Technologies Used
-
-- **Frontend:**
-  - Flutter
-  - Dart
-
-- **Backend:**
-  - Firebase (Authentication and Firestore)
+---
 
 ## Screenshots
 
-![Screenshot 1](https://github.com/user-attachments/assets/58724a26-4e09-4065-8531-9badcb729a47)
-![Screenshot 2](https://github.com/user-attachments/assets/0036c167-edde-4c94-be3a-f6909f5d0077)
-![Screenshot 3](https://github.com/user-attachments/assets/aa132014-d9c1-4f4e-bc6d-7380f47399b9)
-![Screenshot 4](https://github.com/user-attachments/assets/7a0ad741-eaee-4060-b1ea-6a91842cbf08)
-![Screenshot 5](https://github.com/user-attachments/assets/14f991b4-6d04-44dd-80ff-21af14efd3e5)
-![Screenshot 6](https://github.com/user-attachments/assets/057d26d6-fb1a-41a5-8ac9-1e3aaa469782)
-![Screenshot 7](https://github.com/user-attachments/assets/cfc8b80e-14ea-474b-8e87-2d46c07a2404)
+*(Add app screenshots here)*
 
-## Getting Started
+---
 
-To get a local copy up and running, follow these simple steps.
+## Technologies Used
 
-### Prerequisites
+* Flutter (Dart)
+* Firebase Authentication
+* Firebase Firestore & Storage
+* Flutter Local Notifications
+* Location Services (for nearby places)
+* Responsive UI with Flutter ScreenUtil
 
-Make sure you have Flutter and Firebase CLI installed on your machine.
+---
 
-- [Install Flutter](https://docs.flutter.dev/get-started/install)
-- [Firebase CLI Setup](https://firebase.google.com/docs/cli)
+## Installation
 
-### Installation
-
-1. **Clone the repo:**
+1. Clone the repository:
 
    ```bash
-   git clone https://github.com/Didar1313/flutter-ecommerce-app.git
-   cd flutter-ecommerce-app
-# prescripcare
+   git clone https://github.com/Didar1313/prescripcare.git
+   cd prescripcare
+   ```
+
+2. Install dependencies:
+
+   ```bash
+   flutter pub get
+   ```
+
+3. Setup Firebase (see below).
+
+4. Run the app:
+
+   ```bash
+   flutter run
+   ```
+
+---
+
+## Firebase Setup
+
+1. Create a Firebase project and add Android/iOS apps.
+2. Download and add configuration files (`google-services.json` and `GoogleService-Info.plist`).
+3. Enable Email/Password Authentication.
+4. Setup Firestore collections and Storage buckets:
+
+   * Users (with email as document ID)
+   * Medicines, Appointments, Prescriptions, Reports, Doctors, Hospitals, EmergencyServices, etc.
+5. Configure Firebase Storage for images and PDF uploads.
+
+---
+
+## Usage
+
+* Register or login with email.
+* Add medicines and set reminders.
+* Upload prescriptions and reports.
+* Search for doctors or hospitals, view their details and locations.
+* Access nearby restaurants, pharmacies, and emergency ambulances.
+* Manage your profile and emergency services quickly.
+* Receive local notifications for medicines and appointments.
+
+---
+
+## Project Structure
+
+```
+/lib
+ ├── Authenticate
+ │    ├── loginPage.dart
+ │    ├── userRegistration.dart
+ │
+ ├── bottomNavigationBar
+ │    ├── bottomNavigationBar.dart
+ │    ├── bottomNavigationBarItem.dart
+ │    ├── bookMark.dart
+ │    ├── home.dart
+ │    ├── profile.dart
+ │
+ ├── emergencyServices
+ │    ├── ambulanceDetailScreen.dart
+ │    ├── searchAmbulance.dart
+ │    ├── uploadAmbulanceToFirestore.dart
+ │
+ ├── featuressDetails
+ │    ├── addPills.dart
+ │    ├── appointmentReminder.dart
+ │    ├── doctor_upload_service.dart
+ │    ├── emergency_services.dart
+ │    ├── medicalHistory.dart
+ │    ├── medicineReminder.dart
+ │
+ ├── findDoctor
+ │    ├── doctorDetailScreen.dart
+ │    ├── doctorSearchScreen.dart
+ │    ├── uploadDoctorsToFirestore.dart
+ │
+ ├── findHospital
+ │    ├── hospitalDetailsScreen.dart
+ │    ├── hospitalSearchScreen.dart
+ │    ├── uploadHospitalToFirestore.dart
+ │
+ ├── pdfUpload
+ │    ├── uploadPdf.dart
+ │
+ ├── reportPrescription
+ │    ├── imageGallery.dart
+ │    ├── reportPresDetailsScreen.dart
+ │
+ ├── splashScreen
+ │    ├── splashScreen.dart
+ │
+ ├── main.dart
+```
+
+
+
+## Contact
+
+**Didar Bhuiyan**
+Email: [didarbhuiyan1313@gmail.com](mailto:didarbhuiyan1313@gmail.com)
+GitHub: [github.com/Didar1313](https://github.com/Didar1313)
+
+---
