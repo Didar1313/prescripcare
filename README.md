@@ -47,8 +47,8 @@ Managing health can be complex. PrescripCare helps by offering a single app wher
 ---
 
 ## Screenshots
+<img width="200" alt="Screenshot 2025-06-23 at 3 10 50 AM" src="https://github.com/user-attachments/assets/d31fa03a-7ea7-42ae-aa98-de374248ea9e" />
 
-*(Add app screenshots here)*
 
 ---
 
