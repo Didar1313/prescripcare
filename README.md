@@ -66,7 +66,7 @@ Managing health can be complex. PrescripCare helps by offering a single app wher
   
 * **Find Doctor, Doctor Details, **
 
- <img width="200" alt="Screenshot 2025-06-23 at 3 29 46 AM" src="https://github.com/user-attachments/assets/8d694f56-6b94-4d36-81df-9d055aaa4717" />     <img width="200" alt="Screenshot 2025-06-23 at 3 31 06 AM" src="https://github.com/user-attachments/assets/503c2e3a-8411-4c5d-94a2-b685942b8122" />  <img width="200" ![631F00DB-8077-4A0C-AD24-872525C54528_1_201_a](https://github.com/user-attachments/assets/a2c0b4ef-9b1c-446e-9caf-17b2bcb876bd)" />
+ <img width="200" alt="Screenshot 2025-06-23 at 3 29 46 AM" src="https://github.com/user-attachments/assets/8d694f56-6b94-4d36-81df-9d055aaa4717" />     <img width="200" alt="Screenshot 2025-06-23 at 3 31 06 AM" src="https://github.com/user-attachments/assets/503c2e3a-8411-4c5d-94a2-b685942b8122" />  <img width="200" src="https://github.com/user-attachments/assets/a2c0b4ef-9b1c-446e-9caf-17b2bcb876bd/631F00DB-8077-4A0C-AD24-872525C54528_1_201_a" />
 
 
 
